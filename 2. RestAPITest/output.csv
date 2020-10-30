@@ -1,0 +1,10 @@
+Label,# Samples,Average,Min,Max,Std. Dev.,Error %,Throughput,Received KB/sec,Sent KB/sec,Avg. Bytes
+1. POST tests - positive flow,1,1077,1077,1077,0,0.00%,0.92851,0.54,0.34,601
+2. POST tests - 401 Unauthorized ,1,39,39,39,0,0.00%,25.64103,10.24,7.69,409
+"3. POST tests - 400 Bad Request - invalid request body, missing longitude",1,661,661,661,0,0.00%,1.51286,0.88,0.52,596
+4. POST tests - 400 Bad Request - invalid latitude/longitude values (not in -90<=X<=+90 and -180<=Y<=180),1,659,659,659,0,0.00%,1.51745,0.88,0.55,596
+5. POST tests - 400 Bad Request - invalid latitude/longitude values - extra dot at end,1,792,792,792,0,0.00%,1.26263,0.73,0.46,596
+6. GET tests - positive flow,1,846,846,846,0,0.00%,1.18203,0.73,0.36,632
+7. GET tests - negative flow - querying a non-existent entity,1,302,302,302,0,0.00%,3.31126,1.89,1.01,584
+8. DELETE tests - negative flow -  not implemented - ,1,59274,59274,59274,0,0.00%,0.01687,0,0.01,75
+TOTAL,8,7956,39,59274,19398.64,0.00%,0.12563,0.06,0.04,511.1

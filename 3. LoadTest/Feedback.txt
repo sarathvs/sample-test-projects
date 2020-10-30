@@ -1,0 +1,31 @@
+Feedback:
+Load test:
+- jmx file cant be opened (looks like some additional plugin was used)
+- no assertions for http response
+- no client-readable reports created
+
+------------------------------------------------------------------------------------
+
+
+1) To open jmx file, pls follow below steps.
+
+To get additional graphs, pls install additional plugins
+
+Step 1: Add plugin manager to Jmeter by following steps at:
+https://jmeter-plugins.org/wiki/PluginsManager/
+
+Step 2: After restarting jmeter from above step, install below plugin 
+a) Go to Options -> Plugins Manager
+b) Click on "Available Plugins" tab
+c) Search for "KPI vs KPI Graphs"
+d) Select the checkbox
+e) Select "Apply Changes and Restart JMeter" button
+
+Now, we can open LoadTest.jmx
+
+2) Added a text response assertion to check "<title>PHPTRAVELS | Travel Technology Partner</title>"
+
+3) threadsVSresponsetimeGraph.jpg report generated using a reporting plugin
+
+
+PS: Thanks for noting about adding assertion. Now after adding assertion, noted that, lot of requests were getting redirected and resulted in failures (even though they had 200 response code)

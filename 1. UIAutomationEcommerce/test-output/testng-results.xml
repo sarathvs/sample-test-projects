@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-03-18T15:16:50Z" name="eCommerceTestSuite" finished-at="2020-03-18T15:18:19Z" duration-ms="88793">
+    <groups>
+    </groups>
+    <test started-at="2020-03-18T15:16:50Z" name="RegistrationTest" finished-at="2020-03-18T15:17:16Z" duration-ms="25541">
+      <class name="com.ecommerce.tests.RegistrationTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.RegistrationTest@458c1321]" started-at="2020-03-18T20:46:50Z" name="setup" finished-at="2020-03-18T20:47:05Z" duration-ms="15197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testRegisterUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ecommerce.tests.RegistrationTest@458c1321]" started-at="2020-03-18T20:47:07Z" name="testRegisterUser" data-provider="Registration Data" finished-at="2020-03-18T20:47:13Z" duration-ms="6322" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sb]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mr.]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Lname]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[sarathTest100!]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Test]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Lname]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Test street]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Boise]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Idaho]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[92123]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[United States]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[1111111111]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[test1001]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegisterUser -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.RegistrationTest@458c1321]" started-at="2020-03-18T20:47:13Z" name="teardown" finished-at="2020-03-18T20:47:16Z" duration-ms="2782" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.ecommerce.tests.RegistrationTest -->
+    </test> <!-- RegistrationTest -->
+    <test started-at="2020-03-18T15:17:16Z" name="FunctionalFlowTests" finished-at="2020-03-18T15:18:19Z" duration-ms="63191">
+      <class name="com.ecommerce.tests.FunctionalFlowTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.FunctionalFlowTests@7a9273a8]" started-at="2020-03-18T20:47:16Z" name="setup" finished-at="2020-03-18T20:47:30Z" duration-ms="13760" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:com.ecommerce.tests.FunctionalFlowTests@7a9273a8]" started-at="2020-03-18T20:47:30Z" name="loginTest" data-provider="Login Data" finished-at="2020-03-18T20:47:32Z" duration-ms="2162" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sarathtest1002@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sarathTest100!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="addDeleteProductsCheckout()[pri:0, instance:com.ecommerce.tests.FunctionalFlowTests@7a9273a8]" started-at="2020-03-18T20:47:32Z" name="addDeleteProductsCheckout" finished-at="2020-03-18T20:48:14Z" depends-on-methods="com.ecommerce.tests.FunctionalFlowTests.loginTest" duration-ms="42131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addDeleteProductsCheckout -->
+        <test-method signature="filterProductTest()[pri:0, instance:com.ecommerce.tests.FunctionalFlowTests@7a9273a8]" started-at="2020-03-18T20:48:14Z" name="filterProductTest" finished-at="2020-03-18T20:48:16Z" depends-on-methods="com.ecommerce.tests.FunctionalFlowTests.loginTest" duration-ms="1934" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [3] but found [7]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [3] but found [7]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at org.testng.Assert.assertEquals(Assert.java:380)
+	at com.ecommerce.tests.FunctionalFlowTests.filterProductTest(FunctionalFlowTests.java:57)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:696)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:882)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1189)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filterProductTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.FunctionalFlowTests@7a9273a8]" started-at="2020-03-18T20:48:16Z" name="teardown" finished-at="2020-03-18T20:48:19Z" duration-ms="3152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.ecommerce.tests.FunctionalFlowTests -->
+    </test> <!-- FunctionalFlowTests -->
+  </suite> <!-- eCommerceTestSuite -->
+</testng-results>

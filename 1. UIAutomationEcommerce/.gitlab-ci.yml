@@ -1,0 +1,8 @@
+mage: java:latest
+
+stages:
+          - test
+
+Selenium job:
+          stage: test
+            script: testng.sh

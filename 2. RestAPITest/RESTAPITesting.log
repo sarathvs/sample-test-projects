@@ -1,0 +1,9 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1583734790328,1274,1. POST tests - positive flow,200,OK,Default 1-1,text,true,,601,375,1,1,https://spatial-stream.p.rapidapi.com/entity/0,1272,0,442
+1583734791605,40,2. POST tests - 401 Unauthorized ,401,Unauthorized,Default 1-1,text,true,,409,307,1,1,https://spatial-stream.p.rapidapi.com/entity/0,40,0,0
+1583734791836,676,"3. POST tests - 400 Bad Request - invalid request body, missing longitude",400,Bad Request,Default 1-1,text,true,,596,355,1,1,https://spatial-stream.p.rapidapi.com/entity/0,676,0,0
+1583734792526,765,4. POST tests - 400 Bad Request - invalid latitude/longitude values (not in -90<=X<=+90 and -180<=Y<=180),400,Bad Request,Default 1-1,text,true,,596,369,1,1,https://spatial-stream.p.rapidapi.com/entity/0,765,0,127
+1583734793294,685,5. POST tests - 400 Bad Request - invalid latitude/longitude values - extra dot at end,400,Bad Request,Default 1-1,text,true,,596,372,1,1,https://spatial-stream.p.rapidapi.com/entity/0,685,0,0
+1583734793982,386,6. GET tests - positive flow,200,OK,Default 1-1,text,true,,632,313,1,1,https://spatial-stream.p.rapidapi.com/entity/0,386,0,0
+1583734794371,275,7. GET tests - negative flow - querying a non-existent entity,200,OK,Default 1-1,text,true,,584,313,1,1,https://spatial-stream.p.rapidapi.com/entity/2,275,0,0
+1583734794648,60070,8. DELETE tests - negative flow -  not implemented - ,504,GATEWAY_TIMEOUT,Default 1-1,,true,,75,335,1,1,https://spatial-stream.p.rapidapi.com/entity/1,60070,0,133

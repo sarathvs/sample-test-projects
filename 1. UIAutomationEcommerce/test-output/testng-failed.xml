@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="methods" name="Failed suite [eCommerceTestSuite]">
+  <test parallel="methods" name="FunctionalFlowTests(failed)">
+    <classes>
+      <class name="com.ecommerce.tests.RegistrationTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.ecommerce.tests.RegistrationTest -->
+      <class name="com.ecommerce.tests.FunctionalFlowTests">
+        <methods>
+          <include name="teardown"/>
+          <include name="loginTest"/>
+          <include name="filterProductTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.ecommerce.tests.FunctionalFlowTests -->
+    </classes>
+  </test> <!-- FunctionalFlowTests(failed) -->
+</suite> <!-- Failed suite [eCommerceTestSuite] -->
